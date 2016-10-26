@@ -10,7 +10,36 @@
     tools:context="adrian.engforkids.MainPage">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="ENGLISH FOR KIDS!"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:id="@+id/WelcomeText"
+        android:layout_margin="10dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/WelcomeText">
+
+        <Button
+            android:id="@+id/NaukaButton"
+            android:layout_height="100dp"
+            android:layout_below="@id/WelcomeText"
+            android:text="Nauka"
+            android:textSize="32dp"
+            />
+
+        <Button
+            android:id="@+id/TestButton"
+            android:layout_height="100dp"
+            android:layout_below="@id/WelcomeText"
+            android:text="Test"
+            android:textSize="32dp"
+            />
+    </TableLayout>
+
+
 </RelativeLayout>
